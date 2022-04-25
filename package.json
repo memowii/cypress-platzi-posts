@@ -69,7 +69,7 @@
     "webpack-merge": "^4.1.0"
   },
   "standard": {
-    "globals": ["describe", "it", "cy"]
+    "globals": ["describe", "it", "cy", "beforeEach", "after", "afterEach"]
   },
   "engines": {
     "node": ">= 8.0.0",
