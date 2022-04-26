@@ -1,13 +1,17 @@
 'use strict'
 
 describe('Pruebas del login', () => {
+  before(() => {
+    cy.exec('npm run test:clean')
+  })
+
   beforeEach(() => {
     cy.fixture('user.json').as('userData')
     cy.visit('/login')
     cy.contains('h1', 'Bienvenido').should('be.visible')
   })
 
-  it.skip('Debe registrar un usuario', () => {
+  it('Debe registrar un usuario', () => {
     cy.get('@userData').then((userData) => {
       cy.contains('Crear una cuenta').click()
       cy.get('#name').type(userData.name)
