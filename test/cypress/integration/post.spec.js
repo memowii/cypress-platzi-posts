@@ -15,8 +15,10 @@ describe('Pruebas de posts', () => {
 
   it('Debe crear un post', () => {
     cy.get('@userData').then((userData) => {
-      cy.get('textarea').type(Cypress.env('postContent'))
-      cy.contains('button', 'Crear').as('botonCrear')
+      cy.get('textarea').type(Cypress.env('postContent')).debug()
+      cy.contains('button', 'Crear').as('botonCrear').then(() => {
+        debugger
+      })
       cy.get('@botonCrear').should('be.enabled')
       cy.get('@botonCrear').click()
 
