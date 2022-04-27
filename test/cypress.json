@@ -1,4 +1,5 @@
 {
+  "projectId": "87d2ua",
   "trashAssetsBeforeRuns": true,
   "baseUrl": "http://localhost:9000",
   "env": {

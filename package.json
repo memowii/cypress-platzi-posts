@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "cypress:open": "cypress open --project ./test",
-    "cypress:run": "cypress run --project ./test",
+    "cypress:run": "cypress run --project ./test --record --key 23628a0-944d-44a3-86d-067e18840555",
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "lint": "standard",
     "lint-fix": "standard --fix",
