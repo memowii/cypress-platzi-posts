@@ -9,6 +9,7 @@ yarn-error.log*
 config/firebase-admin-keys.json
 
 test/cypress/screenshots/*
+test/cypress/videos/*
 
 # Editor directories and files
 .idea
