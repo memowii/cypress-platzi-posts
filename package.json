@@ -5,7 +5,7 @@
   "author": "edsadr",
   "private": true,
   "scripts": {
-    "cypress:open": "cypress open --project ./test",
+    "cypress:open": "cypress open --project ./test trashAssetsBeforeRuns: true",
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "lint": "standard",
     "lint-fix": "standard --fix",

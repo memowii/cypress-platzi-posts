@@ -8,6 +8,8 @@ yarn-debug.log*
 yarn-error.log*
 config/firebase-admin-keys.json
 
+test/cypress/screenshots/*
+
 # Editor directories and files
 .idea
 .vscode
